@@ -71,4 +71,17 @@ class Page_Controller extends ContentController
 
     }
 
+    public function isLive()
+    {
+        return Director::isLive();
+    }
+    public function isTest()
+    {
+        return Director::isTest();
+    }
+    public function isDev()
+    {
+        return Director::isDev();
+    }
+
 }
