@@ -1,0 +1,171 @@
+// ==================================================
+// E-commerce - Default styles across all e-commerce pages
+// ==================================================
+
+//Generic title styles across checkout pages.
+.ecommerce-intro {
+    padding: 0 0 30px;
+    h1 {
+        text-align: left;
+        color: @brand-primary;
+        font-size: @h2;
+    }
+}
+
+
+//Ecommerce layout css
+#checkout-login,
+.checkout,
+.account,
+.register,
+.sign-in,
+.profile {
+	padding-bottom: 80px;
+	h1 {
+		font-size: @h2;
+		color: @brand-primary;
+		margin: 40px 0;
+	}
+	.checkout-box {
+		border: 1px solid darken(@light-gray, 5%);
+		min-height: 400px;
+		padding: 20px;
+		h4 {
+			color: @black;
+		}
+		.btn {
+			width: 100%;
+		}
+		.note {
+			font-size: @small;
+			color: @gray;
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+		.cartbox-header {
+			.clearfix();
+			h4 {
+				float: left;
+			}
+			.edit-order {
+				font-size: @small;
+				font-family: @font-family-body;
+				float: right;
+				margin-top: 12px;
+			}
+		}
+		//Account guest sign up form
+		.account-guest-signup {
+			margin-top: 30px;
+			p {
+				color: @brand-primary;
+			}
+			.btn {
+				width: auto;
+			}
+		}
+	}
+	.cart-items {
+		tr {
+			border-bottom: 1px solid darken(@light-gray, 5%);
+			td {
+				padding: 10px;
+			}
+		}
+		tfoot {
+			tr {
+				&:first-child {
+					td{
+						padding-top: 30px;
+					}
+				}
+				&.total {
+					td {
+						padding-top: 20px;
+					}
+				}
+				border: none;
+				td {
+					padding: 2px 10px;
+					h5 {
+						color: @black;
+					}
+					small {
+						color: lighten(@gray, 10%);
+					}
+					&.cart-total {
+						h5 {
+							font-size: @h4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//Progress bar at the top of the checkout pages -- 1. 2. 3.
+.checkout-progress {
+    padding-top: 50px;
+    .step {
+        border-bottom: 2px solid darken(@light-gray, 10%);
+        &.active {
+            border-color: @black;
+            border-width: 3px;
+            h5 {
+                color: @black;
+                font-size: @h5;
+                line-height: 13px;
+            }
+        }
+        h5 {
+            text-align: center;
+            font-size: @small;
+            line-height: 13px;
+            color: darken(@light-gray, 10%);
+        }
+    }
+}
+
+//Business Guarantees - at the bottom of the checkout pages
+.business-guarantees {
+    padding: 50px 0 80px;
+    .guarantee {
+        background-color: @lighter-gray;
+        padding: 30px;
+        text-align: center;
+        p {
+            margin: 0;
+            svg {
+                fill: @black;
+                vertical-align: middle;
+                margin-right: 15px;
+            }
+        }
+        &.shipping {
+            p {
+                svg {
+                    width: 40px;
+                    height: 27px;
+                }
+            }
+        }
+        &.security {
+            p {
+                svg {
+                    width: 24px;
+                    height: 30px;
+                }
+            }
+        }
+        &.returns {
+            p {
+                svg {
+                    width: 33px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+// ==================================================
+// Account Pages
+// ==================================================
+
+//My Account and Continue shopping links
+.hero-links {
+	margin-top: 30px;
+	li {
+		&:first-child {
+			a {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+//Account page content
+.account {
+	.account-content {
+		h4 {
+			color: @black;
+		}
+		.account-guest-signup {
+			form {
+				width: 50%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+//Register page
+.register {
+	.checkout-box {
+		min-height: inherit;
+	}
+	.cart-form-centered {
+		.btn {
+			margin-top: 20px;
+		}
+	}
+}
+//Sign in page
+.sign-in {
+	.checkout-box {
+		min-height: inherit;
+		p {
+			text-align: center;
+		}
+	}
+	.cart-form-centered {
+		.form-group-link {
+			text-align: center;
+			margin-bottom: 5px;
+			display: block;
+			& + .form-group-link {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+//Profile page
+.profile {
+	.address {
+		h4 {
+			color: black;
+			margin-top: 20px;
+		}
+		.checkout-box {
+			h4 {
+				margin-top: 0;
+			}
+		}
+	}
+	.checkout-box {
+		min-height: inherit;
+		& + .checkout-box {
+			margin-top: 30px;
+		}
+	}
+	.change-password {
+		margin-top: 20px;
+		display: block;
+	}
+	.copy-details {
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,8 @@
+---
+Name: wkhtml
+Only:
+  environment: dev
+---
+HomePage_Controller:
+  wkhtml_path: '/usr/local/bin/wkhtmltoimage --width 975'
+

@@ -1,0 +1,102 @@
+// ==================================================
+// Variables
+// ==================================================s
+
+//
+// Fonts
+// --------------------------------------------------
+
+// "proxima-nova"; Font Weights: [400][400i][600][600i][700][700i]
+@font-family-body: 		"proxima-nova", sans-serif;
+@font-family-heading: 	Georgia, serif;
+@font-family-base: 		@font-family-body;
+
+@font-size-base: 		15px;
+@line-height-base: 		1.4;
+
+@bold:					700;
+@semibold:				600;
+@normal:				400;
+
+//font sizing based on ems - using variables to keep it consistent;
+@large:					3em;
+@h1:					2.4em;
+@h2:					2em;
+@h3:					1.5em;
+@h4:					1.2em;
+@h5:					1.1em;
+@p:						1em;
+@small:					0.8em;
+
+
+
+//
+// Font-awesome
+// --------------------------------------------------
+@fa-font-path: '../../production/fonts';
+
+//
+// Colors
+// --------------------------------------------------
+@brand-primary: 	#ffb401;
+@brand-secondary: 	#848484;
+
+@black: 			#222222;
+@darker-gray: 		#333333;
+@dark-gray: 		#666666;
+@gray: 				#999999;
+@light-gray:		#CCCCCC;
+@lighter-gray:		#EEEEEE;
+@white: 			#F9F9F9;
+
+@link-color: @brand-primary;
+@link-hover-color: darken(@brand-primary, 10%);
+
+@text-color: @black;
+
+
+
+//
+// Forms
+// --------------------------------------------------
+@input-bg: transparent;
+@input-color: @black;
+@input-border: @brand-primary;
+
+
+//
+// Sprites
+// --------------------------------------------------
+//@gsw: 201px; // global_sprite.png width
+//@gsh: 125px; // global_sprite.png height
+
+
+
+//
+// Media queries breakpoints
+// --------------------------------------------------
+@container-width: 960px;
+
+
+
+//
+// Media queries breakpoints
+// --------------------------------------------------
+@screen-xs:                  480px;
+@screen-phone:               @screen-xs;
+
+@screen-sm:                  480px;
+@screen-tablet:              @screen-sm;
+
+@screen-md:                  960px;
+@screen-desktop:             @screen-md;
+
+@screen-lg:                  960px;
+@screen-lg-desktop:          @screen-lg;
+
+
+
+//
+// Grid system
+// --------------------------------------------------
+@grid-float-breakpoint:     @screen-xs;

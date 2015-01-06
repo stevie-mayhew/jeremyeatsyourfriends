@@ -1,0 +1,5 @@
+node_modules/**
+source/components/**
+source/lib/**/*
+source/js/main.js
+source/js/src/modernizr.js

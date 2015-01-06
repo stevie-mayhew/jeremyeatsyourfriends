@@ -1,0 +1,10 @@
+---
+Name: myopengraphsettings
+After: '#opengraphsettings'
+---
+
+OpenGraph:
+  application_id: ''
+  admin_id: ''
+  default_locale: 'en_US'
+  default_tagbuilder: 'OpenGraphBuilder'

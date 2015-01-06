@@ -1,0 +1,27 @@
+---
+Name: mysite
+After: 'framework/*','cms/*'
+---
+
+SSViewer:
+  theme: 'base'
+
+Email:
+  admin_email: stevie@stevie.co.nz
+
+GDBackend:
+  default_quality: 100
+
+SiteTree:
+  create_default_pages: true
+
+Image:
+  force_resample: true
+
+BetterNavigator:
+    developers:
+      - 'stevie@stevie.co.nz'
+
+File:
+  allowed_extensions:
+    - svg

@@ -1,0 +1,105 @@
+// ==================================================
+// Cart Page
+// ==================================================
+
+.cart-header {
+    position: relative;
+    .checkout-steps {
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+}
+
+.cart {
+    padding-bottom: 80px;
+    .cart-summary {
+        .product {
+            margin-bottom: 30px;
+            .product-title {
+                font-weight: normal;
+            }
+        }
+        .product-image {
+            img {
+                border: none;
+                .box-shadow(none);
+            }
+        }
+        .product-qty {
+            .form-control {
+                border: 1px solid darken(@light-gray, 5%);
+                min-height: 40px;
+                width: 40px;
+                line-height: 40px;
+                display: inline-block;
+            }
+            .update-cart {
+                margin-left: 5px;
+                span {
+                    .hide-text();
+                }
+            }
+        }
+        .remove-product {
+            text-align: center;
+            .cart-remove {
+                color: lighten(@gray, 5%);
+                font-size: 1.5em;
+                width: auto;
+                height: auto;
+                display: inline;
+                .transition(color 300ms ease-in-out);
+                &:hover {
+                    color: @brand-primary;
+                    .opacity(1);
+                }
+                span {
+                    .hide-text();
+                }
+            }
+        }
+    }
+    .cart-total-summary {
+        border: 1px solid darken(@light-gray, 5%);
+        padding: 30px;
+        margin-bottom: 30px;
+        h4 {
+            color: @black;
+        }
+        .cart-subtotal {
+            p {
+                span {
+                    float: right;
+                }
+            }
+        }
+        .cart-total {
+            margin-top: 20px;
+            font-size: @h5;
+            font-weight: normal;
+            h5 {
+                color: @black;
+                letter-spacing: 0;
+                .total {
+                    font-size: @h4;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .pay-now {
+        text-align: right;
+    }
+
+    .dps {
+        .clearfix();
+        margin-top: 30px;
+        img {
+            float: right;
+        }
+    }
+}
+
+

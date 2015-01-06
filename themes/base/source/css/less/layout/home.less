@@ -1,0 +1,66 @@
+// ==================================================
+// Home Page
+// ==================================================
+.main {
+
+    background: @white;
+    .game {
+        min-height: 600px;
+        background: red;
+        position: relative;
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            position: absolute;
+            top: 500px;
+            left: 50px;
+            img {
+                display: block;
+            }
+        }
+        .next-ball {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .jeremy {
+            position: absolute;
+            top: 100px;
+            left: 700px;
+            color: red;
+            background: blue;
+            width: 100px;
+            height: 80px;
+        }
+    }
+
+    .invite-friend {
+        padding-top:15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        .inner {
+            min-height: 150px;
+            border-radius: 10px;
+            border: 1px solid @gray-dark;
+
+            .image-mask {
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border-radius: 50%;
+                margin: 0 auto;
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
